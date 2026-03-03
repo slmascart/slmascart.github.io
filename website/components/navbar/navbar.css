@@ -1,0 +1,71 @@
+/****************************/
+/* NAVBAR                   */
+.navbar {
+    background-color: #333;
+    width: 100%;
+}
+/****************************/
+
+/****************************/
+/* NAVIGATION BUTTONS STYLE */
+.navbtn {
+    float: left;
+
+    background-color: #5550;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.navbtn:hover {
+    background-color: #777;
+}
+/****************************/
+
+/****************************/
+/* The dropdown container */
+.about-dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+#about-navbtn {
+    float: none;
+}
+
+/* Dropdown content (hidden by default) */
+.about-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 14px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.about-dropdown:hover .about-dropdown-content {
+    display: block;
+}
+
+/* Links inside the dropdown */
+.about-dropdown-content a {
+    float: none;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.about-dropdown-content:hover a {
+    background-color: #ddd;
+    display: block;
+}
+/****************************/

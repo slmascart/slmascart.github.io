@@ -1,24 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Home</title>
+
+    <!-- Main style file -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+
+    <!-- Navigation bar -->
+    <script src="website/components/navbar/menu.js" defer></script>
+    <link rel="stylesheet" href="website/components/navbar/navbar.css">
+
+    <!-- Background stars -->
+    <link rel="stylesheet" href="website/components/background-stars/stars.css">
+
+    <!-- Cards of about page -->
+    <link rel="stylesheet" href="website/components/about/cards.css">
+
+    <!-- Footer -->
+    <link rel="stylesheet" href="website/components/footer/footer.css">
+
+    <!-- Load an icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-	<div class="overlay"></div>
-	<div class="stars" aria-hidden="true"></div>
-	<div class="starts2" aria-hidden="true"></div>
-	<div class="stars3" aria-hidden="true"></div>
-	<main class="main">
-		<section class="contact">
-			<h1 class="title">Sciel Ludivine Mascart</h1>
-			<h2 class="sub-title">Site Under Construction</h2>
-		</section>
-	</main>
-</body>
-<footer>
-	<p>Author: S. L. Mascart</p>
-	<p><a href="mailto:contact@slmascart.com"></a></p>
-</footer>
-</html>
+    <!-- Navigation bar.
+         Click on button switch tab visibility through openPage Javascript function.
+      -->
+    <header class="navbar">
+        <button class="navbtn" onclick="openPage('home', this)" id="defaultOpen"><i class="fa fa-fw fa-home"></i> Home</button>
+        <button class="navbtn" onclick="openPage('blog', this)"><i class="fa fa-fw fa-commenting"></i> Blog</button>
+        <button class="navbtn" onclick="openPage('art', this)"><i class="fa fa-fw fa-paint-brush"></i> Art</button>
+        <button class="navbtn" onclick="openPage('news', this)"><i class="fa fa-fw fa-envelope"></i> News</button>
+        <div class="about-dropdown">
+            <button class="navbtn" id="about-navbtn" onclick="openPage('about', this)"><i class="fa fa-fw fa-sun-o"></i>/<i class="fa fa-fw fa-moon-o"></i> About <i class="fa fa-caret-down"></i></button>
+            <div class="about-dropdown-content">
+                <a href="website/pages/about/resume/resume.html">Resume</a>
+            </div>
+        </div>
+    </header>
 
-<!-- Code by https://codepen.io/tiaan/pen/QKmyzr -->
+    <main>
+        <!-- Background stars -->
+        <div class="overlay">
+            <div class="stars1" aria-hidden="true"></div>
+            <div class="stars2" aria-hidden="true"></div>
+            <div class="stars3" aria-hidden="true"></div>
+        </div>
+
+        <div class="tabs">
+            <div id="home" class="tabcontent">
+                <section class="wip">
+                    <h1 class="title">Sciel Ludivine Mascart</h1>
+                    <h2 class="sub-title">Site Under Construction</h2>
+                </section>
+            </div>
+
+            <div id="blog" class="tabcontent">
+                Link to blog pages
+            </div>
+
+            <div id="art" class="tabcontent">
+                Here's some art and futilities
+            </div>
+
+            <div id="news" class="tabcontent">
+                <section>
+                    These are some news
+                </section>
+            </div>
+
+            <div id="about" class="tabcontent">
+                <p>Hello there! Sciel here. Nice to have you here ^^</p>
+                <p>I am many things, I'll make a list someday. Here's my contact for now:</p>
+                <address>
+                    <p>Author: S. L. Mascart</p>
+                    <p>contact[at]slmascart[dot]com</p>
+                </address>
+
+                <div class="row">
+                    <div class="card">
+                        <img src="assets/images/Portrait%20-%20Scientist.jpg"
+                             alt="Sciel L. Mascart"
+                             style="height: 50%; width: 50%">
+                        <div class="container">
+                            <h2>Sciel Mascart</h2>
+                            <p class="title">Scientist</p>
+                            <p>Postdoctoral Scholar at Cold Spring Harbor Laboratory. Formerly known as Cyrille L. Mascart.</p>
+                            <p>mascart[at]cshl[dot]com</p>
+                            <p><a class="contact-button" href="mascart[at]cshl[dot]com">Contact</a></p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="assets/images/Portrait%20-%20Designer.jpg"
+                             alt="Sciel M."
+                             style="height:50%; width: 50%">
+                        <div class="container">
+                            <h2>Sciel L. Mascart</h2>
+                            <p class="title">Designer</p>
+                            <p>My outstanding lurking abilities at the service of fashion.</p>
+                            <p>pro[at]slmascart[dot]com</p>
+                            <p><button class="contact-button">Contact</button></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="copyright">© 2026 slmascart.com. All rights reserved.</div>
+    </footer>
+</body>
+</html>

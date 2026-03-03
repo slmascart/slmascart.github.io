@@ -1,0 +1,57 @@
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+    height: 100%;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*overflow: auto;*/
+}
+
+body {
+	font-size: 110%;
+	font-family: 'Source Sans Pro', sans-serif;
+	background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+}
+
+.tabs {
+    background-color: rgba(0, 0, 0, .2);
+    left: 0px;
+    width: 80%;
+    margin: 1% 10% 2% 10%;
+	overflow: auto;
+}
+
+.wip {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.title {
+	font-family: 'Poiret One', cursive;
+	font-size: 4rem;
+  	margin-bottom: .5rem;
+	width: 100%;
+    text-align: center;
+}
+
+.sub-title {
+	border-top: .1rem solid #fff;
+  	padding: 1rem 4rem;
+	text-align: center;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: white;
+    padding: 100px 20px;
+    display: grid;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	overflow: auto;
+}

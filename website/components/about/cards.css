@@ -1,0 +1,39 @@
+/* Add some shadows to create a card effect */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(1, 1, 1, 0.2);
+    background-color: rgba(233, 211, 199, .9);
+    margin: 1% 10% 2% 10%;
+    overflow: auto;
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.contact-button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 10%;
+}
+
+.contact-button:hover {
+  background-color: #555;
+}
